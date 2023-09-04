@@ -4,6 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+
+    
+    <style>
+        body{
+            background-color: darkblue;
+        }
+        #registroForm{
+            background-color: darkblue;
+            position: absolute;
+            color: white;
+            font-size: 150%;
+            text-align: center;
+            margin: 30%;
+        }
+        #btn{
+            background-color: aqua;
+            margin-top: 10%;
+            transform: scale(1.5);
+            transition: 500ms;
+        }
+        #btn:hover{
+            background-color: coral;
+            transform: scale(2);
+            transition: 500ms;
+        }
+        
+    </style>
+
 </head>
 <body>
     
@@ -18,7 +46,7 @@
         <label for="fechaNacimiento">Fecha de Nacimiento:</label>
         <input type="date" id="fechaNacimiento" autocomplete="off" name="fechaNacimiento" required><br>
       
-        <input type="submit" value="Enviar">
+        <input type="submit" id="btn" value="Enviar">
       </form>
 
 
